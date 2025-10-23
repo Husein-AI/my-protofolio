@@ -1,0 +1,377 @@
+/* ====== GENERAL RESET ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #130303;
+}
+
+/* ====== HEADER & NAV ====== */
+header {
+    background: linear-gradient(to right, hsl(232, 68%, 48%), hsl(279, 75%, 52%));
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 0.75rem 1.25rem;
+    border-radius: 30px;
+}
+
+nav a:hover {
+    background-color: #e601f2;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(82, 1, 242, 0.6);
+}
+
+/* ====== HERO SECTION ====== */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 4rem 2rem;
+    min-height: 90vh;
+    background: linear-gradient(120deg, hsl(232, 68%, 48%) 0%, hsl(279, 75%, 52%) 60%, #111 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+/* ====== IMAGE ====== */
+.image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+.hero-image {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 30px rgba(53, 221, 247, 0.6);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+}
+
+/* ====== ABOUT TEXT ====== */
+.about-me {
+    flex: 1;
+    z-index: 2;
+    animation: fadeInUp 1s ease-out;
+}
+
+.nowrap {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.img-p-about {
+    font-size: 1.25rem;
+    line-height: 1.7;
+}
+
+.highlight {
+    color: #00d9ff;
+}
+
+/* ====== ANIMATION ====== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+@media (max-width: 850px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        width: 70%;
+    }
+
+    .nowrap {
+        font-size: 2.2rem;
+    }
+}
+
+.myskills {
+    display: block;
+    font-size: 2.75rem;
+    font-weight: 600;
+    padding: 2rem;
+
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+
+}
+
+
+.python,
+.html,
+.css,
+.js {
+    list-style: none;
+    border: 4px solid #333;
+    width: 370px;
+    width: 270px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.python li,
+.html li,
+.css li,
+.js li {
+    list-style: none;
+    font-size: 2rem;
+    white-space: wrap;
+
+}
+
+.python li img,
+.html li img,
+.css li img,
+.js li img {
+    display: block;
+
+}
+
+.python p,
+.html p,
+.css p,
+.js p {
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.python:hover,
+.html:hover,
+.css:hover,
+.js:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+
+.h2-aboutme {
+    padding: 2rem;
+    font-size: 2rem;
+
+}
+
+
+
+
+.h2-aboutme {
+    font-size: 3rem;
+}
+
+.about-container {
+    border: 4px, solid, #333;
+    display: flex;
+    margin-left: 1rem;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: center;
+    /* padding: 1.5rem; */
+    border-radius: 3rem;
+}
+
+
+.imgw {
+    width: 26%;
+    height: fit-content;
+    /* border: 4px, solid, #333; */
+    border-radius: 3rem;
+
+}
+
+.imgw:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+}
+
+.me-p-about {
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.age {
+
+    color: #03f5fd;
+}
+
+
+.a-certificates {
+    text-decoration: none;
+    color: #da03ba;
+
+}
+
+.a-certificates:hover {
+    color: #0635d0;
+
+}
+
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+    text-decoration: none;
+
+}
+
+
+.projects {
+    padding: 2rem;
+}
+
+.h2-projects {
+    font-size: 3rem;
+
+}
+
+.Jupiter,
+.RPS {
+    list-style: none;
+    border: 4px solid #333;
+    width: 370px;
+    width: 270px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+.Jupiter li,
+.RPS li {
+    list-style: none;
+    font-size: 2rem;
+    white-space: wrap;
+
+}
+
+.Jupiter li img,
+.RPS li img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+.Jupiter p,
+.RPS p {
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.Jupiter:hover,
+.RPS:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+
+
+.jupiter-a,
+.rps-a {
+    color: #000;
+    text-decoration: none;
+}
+
+.jupiter-a:hover,
+.rps-a:hover {
+    color: #00aeff;
+    text-decoration: none;
+
+}
+
+.contactme {
+    font-size: 3rem;
+}
+
+.contact {
+    text-align: center;
+    background: linear-gradient(120deg, hsl(232, 68%, 48%) 0%, hsl(279, 75%, 52%) 60%, #111 100%);
+}
+
+.contact a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 2rem;
+    display: block;
+}
+
+.contact a:hover {
+    color: rgb(250, 0, 242);
+}
